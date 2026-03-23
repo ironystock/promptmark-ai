@@ -22,7 +22,7 @@ This repository serves as:
 
 | Directory | Purpose |
 |-----------|---------|
-| `docs/` | Reference documentation (architecture, API, guides, self-hosting) |
+| `docs/` | Reference documentation (architecture, API, guides) |
 | `skills/` | Skills catalog — Claude Code skills and AgentSkills |
 | `examples/` | Sample prompts and usage patterns |
 | `integrations/` | Reference integrations with agent frameworks |

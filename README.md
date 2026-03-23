@@ -6,7 +6,7 @@ The public ecosystem for [Promptmark](https://promptmark.ai) — a prompt manage
 
 | Directory | What you'll find |
 |-----------|-----------------|
-| [**docs/**](docs/) | Architecture overview, API reference, integration guides, self-hosting docs |
+| [**docs/**](docs/) | Architecture overview, API reference, integration guides |
 | [**skills/**](skills/) | Claude Code skills and AgentSkills that extend Promptmark's MCP server |
 | [**examples/**](examples/) | Sample prompts and usage patterns |
 | [**integrations/**](integrations/) | Reference integrations with agent frameworks (OpenClaw, ADK, OpenAI Agents) |
@@ -22,7 +22,6 @@ Promptmark is a prompt management platform for AI practitioners. It gives you:
 - **38 MCP tools** — AI agents manage prompts directly via the Model Context Protocol
 - **COMPOSE wizard** — create prompts three ways: blank, guided, or AI consultation
 - **Safety scanning** — PII detection, injection detection, and secrets scanning on publish
-- **Self-hostable** — run your own instance with full data ownership
 
 ## Report an Issue
 

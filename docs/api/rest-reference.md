@@ -14,8 +14,6 @@ All API requests require a JWT token, passed via:
 https://promptmark.ai/api
 ```
 
-For self-hosted instances, replace with your deployment URL.
-
 ## Endpoints
 
 <!-- TODO: Extract and document all public API endpoints from the platform -->
