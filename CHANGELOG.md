@@ -22,3 +22,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   - Development: prompt-debug, prompt-scaffold, variable-validator, preflight (both platforms)
   - Safety: safety-audit, injection-hardener, compliance-report
   - Advanced: prompt-chain-builder
+- 15 Promptmark workflow examples demonstrating MCP tools in real scenarios
+  - Getting Started: template variables, versioning, response capture, collections, conversations
+  - Publishing: safety scanning, public sharing, remixing, lineage tracking
+  - Advanced: eval loops, agent backends, system prompt registry, full lifecycle
+- Complete MCP reference with all 38 tools documented (parameters, types, descriptions)
+- 10 prompt templates in docs/prompts/ (to be ported to promptmark.ai as public prompts)
