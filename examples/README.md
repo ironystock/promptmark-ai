@@ -1,12 +1,16 @@
 # Examples
 
-Sample prompts, usage patterns, and demonstrations of Promptmark's capabilities.
+Workflow examples and usage patterns demonstrating Promptmark in action.
+
+Everything here shows how to use [promptmark.ai](https://promptmark.ai) — MCP tool workflows, template variable patterns, versioning strategies, and integration recipes.
 
 ## Contents
 
 | Directory | Description |
 |-----------|-------------|
-| [prompts/](prompts/) | Example prompts showcasing template variables, metadata, and best practices |
+| [prompts/](prompts/) | Promptmark workflow examples — MCP tool usage, versioning, template patterns |
+
+For standalone prompt templates (not Promptmark-specific), see [docs/prompts/](../docs/prompts/).
 
 ## Contributing
 

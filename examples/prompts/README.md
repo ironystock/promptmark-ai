@@ -1,13 +1,7 @@
-# Example Prompts
+# Promptmark Workflow Examples
 
-Sample prompts demonstrating Promptmark's template variable system, metadata conventions, and prompt engineering patterns.
+Examples showing how to use Promptmark's features in real workflows — MCP tools, template variables, versioning, collections, and integrations.
 
-## Format
+Each example demonstrates a Promptmark-native workflow, not just a prompt in isolation.
 
-Each example should include:
-- The prompt content
-- Template variables used (with types and descriptions)
-- Intended use case
-- Suggested tags and metadata
-
-*No examples published yet. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to submit one.*
+*Examples coming soon. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to submit one.*
