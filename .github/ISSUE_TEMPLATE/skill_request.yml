@@ -1,0 +1,54 @@
+name: Skill Request
+description: Request or propose a new skill for the Promptmark ecosystem
+title: "Skill: "
+labels: ["skill-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a new Claude Code skill or AgentSkill for the Promptmark ecosystem.
+
+  - type: dropdown
+    id: skill-type
+    attributes:
+      label: Skill Type
+      description: What kind of skill is this?
+      options:
+        - Claude Code Skill (slash-command invocable)
+        - AgentSkill (extends MCP server capabilities)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this skill do? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example Invocations
+      description: How would someone use this skill? Show example commands or workflows.
+      placeholder: |
+        /my-skill --flag value
+        Expected: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What MCP tools, external services, or other requirements does this need?
+      placeholder: |
+        - Requires MCP tools: list_prompts, search_prompts
+        - External: OpenAI API key
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: References, similar tools, implementation ideas, or anything else.

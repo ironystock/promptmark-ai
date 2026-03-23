@@ -1,0 +1,54 @@
+name: Claude Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  claude-review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude Code Review
+        id: claude-review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR NUMBER: ${{ github.event.pull_request.number }}
+
+            Please review this pull request and provide feedback on:
+            - Documentation quality and accuracy
+            - Markdown formatting and heading hierarchy
+            - Skill format compliance (SKILL.md with YAML frontmatter for Claude Code skills, README.md for AgentSkills)
+            - Naming conventions (lowercase-kebab-case directories)
+            - Broken internal links
+            - CHANGELOG and README updates where appropriate
+            - Contribution guidelines adherence
+
+            Use the repository's CLAUDE.md for guidance on conventions. Be constructive and helpful.
+
+            IMPORTANT: For non-required changes (nice-to-haves, suggestions, minor improvements),
+            create GitHub issues instead of including them in the PR review. Only include blocking/required changes in the PR review itself.
+
+            BEFORE CREATING ANY ISSUE:
+            1. Use `gh issue list --limit 100` to get existing open issues
+            2. Search for similar issues using `gh search issues "<keywords>" --repo ${{ github.repository }}`
+            3. Only create a new issue if no existing issue covers the same topic
+            4. If a similar issue exists, you may add a comment to it instead of creating a duplicate
+            5. Use `gh issue create` with appropriate labels for genuinely new issues
+
+            Use `gh pr comment` with your Bash tool to leave your review as a comment on the PR.
+
+          claude_args: '--allowed-tools "Bash(gh issue view:*),Bash(gh issue create:*),Bash(gh issue list:*),Bash(gh label create:*),Bash(gh search:*),Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr list:*)"'

@@ -1,0 +1,60 @@
+name: Feature Request
+description: Suggest a feature or improvement for Promptmark
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature. Help us understand the problem you're trying to solve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Use Case
+      description: What problem does this solve? What are you trying to accomplish?
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this to work?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches have you considered or tried?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Promptmark does this relate to?
+      options:
+        - Web UI
+        - MCP Server
+        - REST API
+        - Prompt Management
+        - Collections / Tags
+        - COMPOSE Wizard
+        - Versioning
+        - Sharing / Public Profiles
+        - Backups
+        - Safety Scanning
+        - Authentication
+        - Self-Hosting
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Mockups, examples, references, or anything else that might help.
