@@ -15,6 +15,7 @@ Template variables are powerful but easy to get wrong — a typo in a variable n
 
 - `get_prompt` — retrieve prompt content and variable definitions
 - `list_prompts` — batch validation across library
+- `get_prompt_schema` — retrieve variable schema definitions
 - `update_prompt` — auto-fix simple issues
 
 ## Usage

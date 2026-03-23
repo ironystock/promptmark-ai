@@ -27,11 +27,11 @@ Use `/prompt-debug` when:
    - **Overly broad scope** — too many tasks in a single prompt
    - **Variable misuse** — template variables used in confusing contexts
    - **Model mismatch** — instructions that assume capabilities the target model lacks
-4. If the prompt has versions, compare against the last known-good version:
-   - Diff the versions to identify what changed
+4. If the prompt has versions, retrieve them via `get_prompt_versions` and compare against the last known-good version:
+   - Retrieve specific versions via `get_prompt_version` to identify what changed
    - Pinpoint which change likely caused the regression
 5. Propose targeted fixes with explanations
-6. Optionally create a fixed version
+6. Optionally save the fix via `update_prompt` (which auto-creates a version snapshot)
 
 ## Example
 

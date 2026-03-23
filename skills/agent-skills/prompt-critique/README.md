@@ -14,7 +14,7 @@ Think of this as a code review, but for prompts. Evaluates a prompt across multi
 ## MCP Tools Used
 
 - `get_prompt` — retrieve the prompt to critique
-- `create_version` — optionally save an improved version incorporating suggestions
+- `update_prompt` — optionally save an improved version incorporating suggestions (auto-versions)
 
 ## Usage
 

@@ -16,8 +16,7 @@ Tagging is the first thing to slip when you're focused on writing prompts. This 
 - `list_prompts` — find prompts needing tags
 - `get_prompt` — analyze content for tag suggestions
 - `list_tags` — respect existing taxonomy
-- `create_tag` — create new tags when needed
-- `update_prompt` — apply tags
+- `update_prompt` — apply tags (tags are created inline via the tags field)
 
 ## Usage
 

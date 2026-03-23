@@ -17,6 +17,7 @@ If you're building with LangChain or LangGraph, you want your Promptmark prompts
 - `get_prompt` — retrieve prompt content and variable definitions
 - `list_prompts` — enumerate prompts for batch sync
 - `search_prompts` — find prompts by content or tags
+- `render_prompt` — render prompt with variable substitution for template output
 
 ## Usage
 

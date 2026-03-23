@@ -14,12 +14,10 @@ For teams in regulated industries or agencies with audit requirements, you need 
 
 - `list_prompts` — enumerate all prompts
 - `get_prompt` — full metadata for each prompt
-- `list_versions` — version history
-- `get_shared` — publishing/sharing status
+- `get_prompt_versions` — version history
+- `search_prompts` — find published prompts via is_public filter
 - `list_collections` — organizational structure
 - `list_tags` — categorization
-- `user_stats` — aggregate metrics
-- `user_profile` — account context
 
 ## Usage
 

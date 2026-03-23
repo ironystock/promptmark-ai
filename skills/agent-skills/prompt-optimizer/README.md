@@ -14,8 +14,8 @@ Takes a prompt that's "working but not great" and makes it better. Identifies co
 ## MCP Tools Used
 
 - `get_prompt` — retrieve the prompt to analyze
-- `create_version` — save the optimized version
-- `diff_versions` — show what changed
+- `update_prompt` — save the optimized version (auto-versions)
+- `get_prompt_version` — retrieve version content for comparison
 
 ## Usage
 
@@ -46,4 +46,4 @@ while keeping the same output quality.
 The optimizer creates a new version of the prompt with:
 - The improved content
 - A version note listing each change and its rationale
-- Before/after comparison via `diff_versions`
+- Before/after comparison via `get_prompt_version` (retrieve two versions and compare)

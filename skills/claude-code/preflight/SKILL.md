@@ -24,8 +24,8 @@ Use `/preflight` when:
      - Title: auto-generated from content (first 60 chars or task description)
      - Tags: `preflight`, `session-<timestamp>`, model name
      - Template variables extracted from any parameterized parts
-   - After receiving the response, create a version with:
-     - The response appended as a structured note
+   - After receiving the response, store it via `capture_response` with:
+     - The model output and metadata (model name, token count)
      - Quality indicators (did the response match expected format? was it complete?)
 3. Group all captured prompts into a session collection
 4. At session end, produce a summary:

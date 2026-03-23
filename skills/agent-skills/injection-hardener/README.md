@@ -14,8 +14,7 @@ Prompts that accept user input (via template variables or inline) are vulnerable
 ## MCP Tools Used
 
 - `get_prompt` — retrieve the prompt to analyze
-- `create_version` — save the hardened version
-- `update_prompt` — apply fixes
+- `update_prompt` — save the hardened version and apply fixes (auto-versions)
 
 ## Usage
 

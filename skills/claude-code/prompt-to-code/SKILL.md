@@ -18,15 +18,15 @@ Use `/prompt-to-code` when:
 
 ## Execution
 
-1. Retrieve the target prompt via `get_prompt` to understand its structure
+1. Retrieve the target prompt via `get_prompt` and its variable definitions via `get_prompt_schema`
 2. Ask the user for:
    - Target language (Python, TypeScript, Go)
    - Framework (LangChain, LlamaIndex, Anthropic SDK, OpenAI SDK, raw HTTP)
    - Where to write the generated code
 3. Generate code that:
    - Fetches the prompt from Promptmark via MCP or REST
-   - Type-checks template variables against the schema
-   - Resolves variables at call time
+   - Type-checks template variables against the schema (using `get_prompt_schema`)
+   - Resolves variables at call time via `render_prompt`
    - Calls the target model with the resolved prompt
    - Handles errors (prompt not found, variable validation, API failures)
    - Includes caching to avoid re-fetching on every call

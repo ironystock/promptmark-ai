@@ -14,9 +14,8 @@ When a prompt has been through many iterations, it's hard to remember what chang
 ## MCP Tools Used
 
 - `get_prompt` — retrieve the prompt
-- `list_versions` — enumerate version history
-- `get_version` — retrieve specific version content
-- `diff_versions` — compare consecutive versions
+- `get_prompt_versions` — enumerate version history
+- `get_prompt_version` — retrieve specific version content for comparison
 
 ## Usage
 

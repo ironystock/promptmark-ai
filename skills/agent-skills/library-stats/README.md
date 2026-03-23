@@ -12,12 +12,10 @@ Understand your library at a glance — how many prompts, how actively they're v
 
 ## MCP Tools Used
 
-- `user_stats` — aggregate metrics
-- `user_profile` — account context
 - `list_prompts` — enumerate prompts for analysis
 - `list_collections` — collection metrics
 - `list_tags` — tag distribution
-- `list_versions` — version activity per prompt
+- `get_prompt_versions` — version activity per prompt
 
 ## Usage
 

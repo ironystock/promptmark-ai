@@ -16,9 +16,8 @@ When you want to showcase your prompt engineering work publicly — whether for 
 
 - `get_prompt` — retrieve prompts for review
 - `list_collections` — resolve collection-based targets
-- `publish_prompt` — publish each prompt
-- `get_shared` — verify published state
-- `user_profile` — link to public profile
+- `update_prompt` — set is_public to publish each prompt
+- `search_prompts` — verify published state via is_public filter
 
 ## Usage
 

@@ -20,9 +20,10 @@ Use `/publish-prep` when:
 
 1. Retrieve the prompt via `get_prompt`
 2. Run the pre-flight checklist (see below)
-3. Present findings grouped by severity (blocker, warning, suggestion)
-4. Offer to fix issues automatically where possible
-5. On all-clear, confirm readiness to publish
+3. If safety scan issues exist, review and `acknowledge_scan` as appropriate
+4. Present findings grouped by severity (blocker, warning, suggestion)
+5. Offer to fix issues automatically where possible
+6. On all-clear, confirm readiness to publish
 
 ## Pre-Flight Checklist
 

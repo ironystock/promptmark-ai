@@ -17,9 +17,8 @@ A full archive of everything — every prompt, every version, every collection a
 - `list_collections` — capture collection structure
 - `get_collection` — collection membership details
 - `list_tags` — capture tag set
-- `list_versions` — version history per prompt
-- `get_version` — full version content
-- `user_profile` — account context for the archive header
+- `get_prompt_versions` — version history per prompt
+- `get_prompt_version` — full version content
 
 ## Usage
 

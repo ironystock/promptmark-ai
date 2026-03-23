@@ -17,8 +17,7 @@ Libraries grow organically and accumulate cruft. This skill gives you an honest 
 - `get_prompt` — inspect individual prompts for completeness
 - `list_collections` — find empty or underused collections
 - `list_tags` — identify unused or redundant tags
-- `list_versions` — check version activity per prompt
-- `user_stats` — overall library metrics
+- `get_prompt_versions` — check version activity per prompt
 
 ## Usage
 

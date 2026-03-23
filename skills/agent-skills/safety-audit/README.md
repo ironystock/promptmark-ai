@@ -16,6 +16,7 @@ Before making prompts public — whether a single prompt or an entire portfolio 
 - `list_prompts` — enumerate target prompts
 - `get_prompt` — retrieve content for analysis
 - `list_collections` — resolve collection-based targets
+- `acknowledge_scan` — acknowledge safety scan findings
 
 ## Usage
 

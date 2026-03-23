@@ -14,8 +14,8 @@ When you deploy code that depends on specific prompts, you want to snapshot thos
 ## MCP Tools Used
 
 - `get_prompt` — retrieve current prompt state
-- `create_version` — create the snapshot
-- `list_versions` — verify snapshot was created
+- `update_prompt` — save changes to create the snapshot (auto-versions)
+- `get_prompt_versions` — verify snapshot was created
 - `get_collection` — resolve collection-based targets
 
 ## Usage

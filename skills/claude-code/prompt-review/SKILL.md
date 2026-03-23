@@ -18,7 +18,7 @@ Use `/prompt-review` when:
 
 ## Execution
 
-1. Retrieve the prompt and its version history via `get_prompt` and `list_versions`
+1. Retrieve the prompt and its version history via `get_prompt` and `get_prompt_versions`
 2. Identify what changed:
    - Compare current vs. previous version, or
    - Compare two specific versions the user identifies

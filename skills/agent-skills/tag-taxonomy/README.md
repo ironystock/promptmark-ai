@@ -15,9 +15,8 @@ Tags grow organically and get messy — synonyms accumulate ("support" vs "custo
 
 - `list_tags` — enumerate all tags with usage counts
 - `list_prompts` — analyze prompt content for missing tag categories
-- `create_tag` — create new canonical tags
-- `delete_tag` — remove deprecated tags
-- `update_prompt` — re-tag prompts
+- `rename_tag` — rename tags to canonical form
+- `update_prompt` — re-tag prompts (tags are created inline via the tags field; unused tags are auto-removed)
 
 ## Usage
 

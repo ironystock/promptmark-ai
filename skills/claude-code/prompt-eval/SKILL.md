@@ -19,9 +19,9 @@ Use `/prompt-eval` when:
 ## Execution
 
 1. Retrieve the target prompt via `get_prompt` (by ID or search)
-2. List available models via `list_models` to present options
-3. Resolve template variables — prompt the user for values or use defaults
-4. Execute the prompt against 2-4 selected models
+2. Ask the user which models to compare (they must have BYOK keys configured)
+3. Validate template variables via `validate_prompt_inputs` and resolve the prompt via `render_prompt`
+4. Execute the rendered prompt against 2-4 selected models
 5. Present results in a comparison table with annotations:
    - Output completeness (did the model follow all instructions?)
    - Format compliance (did it match the requested output structure?)
@@ -44,4 +44,5 @@ Output: side-by-side comparison table with quality scores and a recommendation.
 
 - Requires BYOK API keys configured for the models you want to test
 - Template variables are resolved before sending to each model
-- Results are presented locally — nothing is saved to Promptmark unless you choose to version the findings
+- Results can be stored in Promptmark via `capture_response` for traceability
+- Results are presented locally — nothing is saved to Promptmark unless you choose to capture or version the findings

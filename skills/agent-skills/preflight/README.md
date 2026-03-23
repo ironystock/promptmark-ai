@@ -16,11 +16,11 @@ Works with any MCP-compatible client: Claude Desktop, Cursor, Warp, or custom in
 ## MCP Tools Used
 
 - `create_prompt` — store each prompt sent
-- `create_version` — attach responses as version notes
+- `capture_response` — store AI responses for traceability
+- `update_prompt` — save changes and attach response notes (auto-versions)
 - `create_collection` — group session prompts together
-- `create_tag` — tag with session ID, model name, timestamp
 - `search_prompts` — deduplicate against previously captured prompts
-- `list_tags` — check for existing session tags
+- `list_tags` — check for existing session tags (tags are created inline via create_prompt/update_prompt tags field)
 
 ## Usage
 
@@ -42,7 +42,7 @@ Turn on preflight logging. Tag everything with "eval-run-42".
    - **Prompt capture**: the prompt sent to the model is stored via `create_prompt`
      - Title: derived from content or user-provided label
      - Tags: `preflight`, session name, model name, ISO date
-   - **Response capture**: the model's response is stored as a version note via `create_version`
+   - **Response capture**: the model's response is stored via `capture_response`
      - Includes: model used, token count, response time (if available)
      - Includes: quality flag (complete/partial/error)
 3. All prompts are grouped into a session collection

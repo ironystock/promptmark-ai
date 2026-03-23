@@ -18,7 +18,7 @@ Use `/template-designer` when:
 
 ## Execution
 
-1. Retrieve the prompt via `get_prompt`
+1. Retrieve the prompt via `get_prompt` and its existing variable definitions via `get_prompt_schema`
 2. Analyze the content to identify parameterizable values:
    - Audiences, personas, or roles
    - Topics, subjects, or domains
