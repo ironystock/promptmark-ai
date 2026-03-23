@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "promptmark": {
+      "command": "promptmark-mcp",
+      "args": [],
+      "env": {
+        "PROMPTMARK_API_KEY": "${PROMPTMARK_API_KEY}"
+      }
+    }
+  }
+}

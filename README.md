@@ -6,10 +6,11 @@ The public ecosystem for [Promptmark](https://promptmark.ai) — a prompt manage
 
 | Directory | What you'll find |
 |-----------|-----------------|
-| [**docs/**](docs/) | Architecture overview, API reference, integration guides |
-| [**skills/**](skills/) | Claude Code skills and AgentSkills that extend Promptmark's MCP server |
-| [**examples/**](examples/) | Sample prompts and usage patterns |
-| [**integrations/**](integrations/) | Reference integrations with agent frameworks (OpenClaw, ADK, OpenAI Agents) |
+| [**plugin/**](plugin/) | Official Claude Code plugin — session capture, auto-validation, pre-publish gates |
+| [**skills/**](skills/) | 32 standalone Claude Code skills and AgentSkills for Promptmark |
+| [**docs/**](docs/) | Architecture overview, API reference, integration guides, prompt templates |
+| [**examples/**](examples/) | Promptmark workflow examples with MCP tool invocations |
+| [**integrations/**](integrations/) | Reference integrations with 8 agent frameworks |
 | [**apps/**](apps/) | Future alternate entrypoints (TUI, CLI, desktop) |
 
 ## What is Promptmark?

@@ -1,0 +1,13 @@
+{
+  "name": "promptmark",
+  "version": "0.1.0",
+  "description": "Promptmark integration for Claude Code — capture sessions, validate prompts, and manage your prompt library.",
+  "author": {
+    "name": "Promptmark",
+    "url": "https://promptmark.ai"
+  },
+  "homepage": "https://github.com/ironystock/promptmark-ai",
+  "repository": "https://github.com/ironystock/promptmark-ai",
+  "license": "Apache-2.0",
+  "keywords": ["promptmark", "prompts", "mcp", "capture", "prompt-management"]
+}

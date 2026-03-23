@@ -31,3 +31,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 - 8 reference integration plans: Anthropic SDK, OpenAI Agents, OpenClaw, Google ADK, LangChain, Vercel AI SDK, CrewAI, Go Native
   - Each with quickstart + full demo scope, MCP tools used, and service account setup
   - Blocked on service account feature — scaffolded with planned code structure
+- Promptmark Claude Code plugin (plugin/)
+  - prompty: haiku background agent for session capture (purple theme)
+  - SessionStart hook: capture opt-in + library health summary
+  - PostToolUse hook: auto-validate template variables after prompt edits
+  - PreToolUse hook: block unsafe publishes (PII, secrets, missing metadata)
+  - 4 slash commands: /capture, /audit, /validate, /publish-check
+  - Auto-loaded rules for Promptmark MCP conventions
+  - MCP server configuration for Promptmark
