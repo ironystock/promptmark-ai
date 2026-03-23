@@ -28,3 +28,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   - Advanced: eval loops, agent backends, system prompt registry, full lifecycle
 - Complete MCP reference with all 38 tools documented (parameters, types, descriptions)
 - 10 prompt templates in docs/prompts/ (to be ported to promptmark.ai as public prompts)
+- 8 reference integration plans: Anthropic SDK, OpenAI Agents, OpenClaw, Google ADK, LangChain, Vercel AI SDK, CrewAI, Go Native
+  - Each with quickstart + full demo scope, MCP tools used, and service account setup
+  - Blocked on service account feature — scaffolded with planned code structure
