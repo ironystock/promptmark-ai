@@ -39,3 +39,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
   - 4 slash commands: /capture, /audit, /validate, /publish-check
   - Auto-loaded rules for Promptmark MCP conventions
   - MCP server configuration for Promptmark
+- Promptmark OpenClaw plugin (oc-plugin/)
+  - TypeScript npm package with definePluginEntry
+  - 12 registered tools: prompt CRUD, render, schema, capture, collections, tags, versions
+  - Background capture service with /capture command
+  - 4 agent skills: capture, audit, validate, publish-check
+  - Typed MCP client interface (awaiting service accounts for implementation)
