@@ -18,18 +18,6 @@ This repository serves as:
 
 **Promptmark Technical Context:** Go + Gin | Civic Auth (OAuth) | Per-user SQLite isolation | 38 MCP tools | HTMX + Templ templates
 
-## Agent Model Configuration (CRITICAL)
-
-> All subagents in `.claude/agents/` have explicit, purposeful model choices (opus for content creation, sonnet for validation). **DO NOT** pass a `model` parameter to the Task tool when invoking these agents. Let them use their configured models.
-
-## Agent Delegation
-
-| Domain | Agent | When to use |
-|--------|-------|-------------|
-| Documentation content | `docs-writer` | Writing/editing docs in `docs/`, skill descriptions, integration guides |
-| Product marketing | `pitchlady-savant` | README copy, public-facing content, skill catalog descriptions, landing page text |
-| Documentation quality | `guardian-docs` | Pre-PR review for markdown quality, skill format compliance, broken links |
-
 ## Directory Structure
 
 | Directory | Purpose |
@@ -48,5 +36,3 @@ This repository serves as:
 - **Skill format** — Claude Code skills require `SKILL.md` with YAML frontmatter; AgentSkills require `README.md` with purpose, prerequisites, usage
 - **Naming** — lowercase-kebab-case for all directories
 - **Links** — relative within repo, absolute for external resources
-
-> Path-specific conventions are in `.claude/rules/` and load automatically when you touch matching files.

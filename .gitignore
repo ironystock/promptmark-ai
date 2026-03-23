@@ -13,8 +13,8 @@ Thumbs.db
 *.swo
 *~
 
-# Claude Code local config
-.claude/settings.local.json
+# Claude Code (internal tooling, not public)
+.claude/
 
 # Dependencies (future apps)
 node_modules/
